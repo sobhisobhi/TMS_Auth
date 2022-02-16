@@ -1,0 +1,39 @@
+{
+  "name": "TMS_Authentification_App",
+  "version": "1.0.0",
+  "description": "Authentication microservices",
+  "main": "server.js",
+  "repository": "https://github.com/sobhisobhi/TMS_Auth.git",
+  "author": "sobhi",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "eslint": "7.22.0",
+    "express": "^4.17.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.1",
+    "mongoose-unique-validator": "^3.0.0",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0"
+  }
+}
