@@ -30,7 +30,9 @@ exports.login = asyncHandler(async (req, res, next) => {
         );
     }
 
-    const user = await User.findOne({ email }).select("+password");
+    const user = await User.findOne({ email })
+    .populate({ path: 'roleId', select: 'roleName' })
+    .select("+password");
     if (!user) {
         return next(new ErrorResponse("Invalid credentials", 400));
     }
